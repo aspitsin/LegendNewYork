@@ -1,0 +1,3532 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="resources-path" content="/resources/">
+  <title>Legend New York</title>
+
+  <meta name="description" content="Уникальная компания в сфере красоты, специализирующаяся на параллельном и мобильном обслуживании.">
+
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Legend New York">
+  <meta property="og:url" content="http://lny.rdclr.ru/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="http://lny.rdclr.ru/resources/images/ico/1200х630.jpg">
+  <link rel="image_src" href="http://lny.rdclr.ru/resources/images/ico/1200х630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:description" content="Уникальная компания в сфере красоты, специализирующаяся на параллельном и мобильном обслуживании.">
+  <meta property="og:site_name" content="Legend New York">
+
+  <link rel="icon" href="/resources/images/ico/32.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="/resources/images/ico/32.jpg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/resources/images/ico/1024.jpg">
+  <link rel="apple-touch-icon" sizes="76x76" href="/resources/images/ico/76.jpg">
+  <link rel="apple-touch-icon" sizes="120x120" href="/resources/images/ico/120.jpg">
+  <link rel="apple-touch-icon" sizes="152x152" href="/resources/images/ico/152.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/resources/images/ico/180.jpg">
+
+  <link rel="stylesheet" href="/resources/css/styles.css">
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script src="/resources/js/libs/modernizr.js"></script>
+  <script data-main="/resources/js/app" src="/resources/js/require.js"></script>
+</head>
+
+<body>
+
+
+  <div class="page-wrapper">
+
+    <div class="overlay show1000" id="overlay"></div>
+
+    <div class="menu-btn" id="menu-btn">
+      <div class="b b1"></div>
+      <div class="b b2"></div>
+      <div class="b b3"></div>
+      <div class="b b4"></div>
+      <div class="b b5"></div>
+    </div>
+
+    <div class="popup js-popup" data-id="call-popup">
+      <div class="popup-outer">
+        <div class="popup-inner">
+          <div class="popup-cell">
+            <div class="close show640 show320 js-popup-close">
+              <div class="b b1"></div>
+              <div class="b b2"></div>
+            </div>
+            <div class="ov js-popup-close"></div>
+            <div class="form-popup popup-content">
+              <div class="close show1000 js-popup-close">
+                <div class="b b1"></div>
+                <div class="b b2"></div>
+              </div>
+              <div class="form-wrapper">
+                <h3>Вызов мастера</h3>
+                <div class="response js-form-response" data-id="f1">
+                  <span class="response-inner"></span>
+                </div>
+                <form action="/ajax.php/?type=master" class="js-form" data-id="f1">
+                  <div class="line">
+                    <label class="input-wrapper">
+                      <span class="input-placeholder">Имя и фамилия</span>
+                      <input type="text" name="data[name]" data-required="true">
+                    </label>
+                  </div>
+                  <div class="line">
+                    <label class="input-wrapper">
+                      <span class="input-placeholder">Номер телефона</span>
+                      <input type="tel" name="data[tel]" data-required="true">
+                    </label>
+                  </div>
+                  <div class="submit-line">
+                    <button>оставить заявку</button>
+                  </div>
+                </form>
+              </div>
+              <div class="tx">Мы&nbsp;свяжемся с&nbsp;вами и&nbsp;обсудим все детали совместной работы. Или вы&nbsp;можете сами позвонить
+                нам:
+              </div>
+              <div class="phone">
+                <a href="tel:+74956444474">+7(495) 644-44-74</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup js-popup" data-id="saloon-popup">
+      <div class="popup-outer">
+        <div class="popup-inner">
+          <div class="popup-cell">
+            <div class="close show640 show320 js-popup-close">
+              <div class="b b1"></div>
+              <div class="b b2"></div>
+            </div>
+            <div class="ov js-popup-close"></div>
+            <div class="form-popup popup-content">
+              <div class="close show1000 js-popup-close">
+                <div class="b b1"></div>
+                <div class="b b2"></div>
+              </div>
+              <div class="form-wrapper">
+                <h3>Запись в салон</h3>
+                <div class="response js-form-response" data-id="f2">
+                  <span class="response-inner"></span>
+                </div>
+                <form action="/ajax.php/?type=salon" class="js-form" data-id="f2">
+                  <div class="line">
+                    <label class="input-wrapper">
+                      <span class="input-placeholder">Имя и фамилия</span>
+                      <input type="text" name="data[name]" data-required="true">
+                    </label>
+                  </div>
+                  <div class="line">
+                    <label class="input-wrapper">
+                      <span class="input-placeholder">Номер телефона</span>
+                      <input type="tel" name="data[tel]" data-required="true">
+                    </label>
+                  </div>
+                  <div class="line">
+                    <label class="input-wrapper select">
+                      <span class="input-placeholder">Выберете салон</span>
+                      <select name="themes" data-required="true">
+                        <option selected disabled></option>
+                        <option value="TSVETNOY">TSVETNOY</option>
+                        <option value="MOSCOW CITY">MOSCOW CITY</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="submit-line">
+                    <button>оставить заявку</button>
+                  </div>
+                </form>
+              </div>
+              <div class="tx">Мы&nbsp;свяжемся с&nbsp;вами и&nbsp;обсудим все детали совместной работы. Или вы&nbsp;можете сами позвонить
+                нам:
+              </div>
+              <div class="phone">
+                <a href="tel:+74956444474">+7(495) 644-44-74</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup js-popup" data-id="corp-popup">
+      <div class="popup-outer">
+        <div class="popup-inner">
+          <div class="popup-cell">
+            <div class="close show640 show320 js-popup-close">
+              <div class="b b1"></div>
+              <div class="b b2"></div>
+            </div>
+            <div class="form-popup popup-content">
+              <div class="close show1000 js-popup-close">
+                <div class="b b1"></div>
+                <div class="b b2"></div>
+              </div>
+              <div class="form-wrapper">
+                <h3>Корпоративное обслуживание</h3>
+                <div class="response js-form-response" data-id="f2">
+                  <span class="response-inner"></span>
+                </div>
+                <form action="/ajax.php/?type=corp" class="js-form" data-id="f2">
+                  <div class="line">
+                    <label class="input-wrapper">
+                      <span class="input-placeholder">Имя и фамилия</span>
+                      <input type="text" name="data[name]" data-required="true">
+                    </label>
+                  </div>
+                  <div class="line">
+                    <label class="input-wrapper">
+                      <span class="input-placeholder">Номер телефона</span>
+                      <input type="tel" name="data[tel]" data-required="true">
+                    </label>
+                  </div>
+                  <div class="submit-line">
+                    <button>оставить заявку</button>
+                  </div>
+                </form>
+              </div>
+              <div class="tx">Мы&nbsp;свяжемся с&nbsp;вами и&nbsp;обсудим все детали совместной работы. Или вы&nbsp;можете сами позвонить
+                нам:
+              </div>
+              <div class="phone">
+                <a href="tel:+79263415503">+7(926) 341-55-03</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup js-popup" data-id="price-popup">
+      <div class="popup-outer">
+        <div class="popup-inner">
+          <div class="popup-cell">
+            <div class="close show640 show320 js-popup-close">
+              <div class="b b1"></div>
+              <div class="b b2"></div>
+            </div>
+            <div class="ov js-popup-close"></div>
+            <div class="price-popup popup-content">
+              <div class="close show1000 js-popup-close">
+                <div class="b b1"></div>
+                <div class="b b2"></div>
+              </div>
+              <h3>Мобильный прайс</h3>
+              <div class="price">
+                <div class="cat-selected js-price-subcategory">
+                  <div class="tp">
+                    <h3>Ногтевой сервис</h3>
+                    <div class="subcategory">
+                      <span class="item active">Маникюр</span>
+                      <span class="item">Педикюр</span>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="scroll show320"></div>
+                  <div class="table active">
+                    <table>
+                      <tbody>
+                        <thead>
+                          <td></td>
+                          <td></td>
+                          <td>Мастер</td>
+                          <td>Vip Мастер</td>
+                        </thead>
+                        <tr>
+                          <td>Маникюр с лаком Christina Fitzgerald/мужской маникюр</td>
+                          <td>
+                            <span class="tm">60 мин</span>
+                          </td>
+                          <td>2100</td>
+                          <td>2500</td>
+                        </tr>
+                        <tr>
+                          <td>Маникюр с гелевым покрытием Luxio</td>
+                          <td>
+                            <span class="tm">90 мин</span>
+                          </td>
+                          <td>3200</td>
+                          <td>3800</td>
+                        </tr>
+                        <tr>
+                          <td>Кератиновое укрепление ногтей (Голландия)</td>
+                          <td>
+                            <span class="tm">15 мин</span>
+                          </td>
+                          <td>1000</td>
+                          <td>1200</td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+                  </div>
+                  <div class="table">
+                    <table>
+                      <tbody>
+                        <thead>
+                          <td></td>
+                          <td></td>
+                          <td>Мастер</td>
+                          <td>Vip Мастер</td>
+                        </thead>
+                        <tr>
+                          <td>Педикюр с лаком Christina Fitzgerald/мужской педикюр</td>
+                          <td>
+                            <span class="tm">90 мин</span>
+                          </td>
+                          <td>3200</td>
+                          <td>3900</td>
+                        </tr>
+                        <tr>
+                          <td>Педикюр с гелевым покрытием Luxio</td>
+                          <td>
+                            <span class="tm">120 мин</span>
+                          </td>
+                          <td>4250</td>
+                          <td>4900</td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+                  </div>
+                </div>
+                <div class="cat-selected js-price-subcategory">
+                  <div class="tp">
+                    <h3>Парикмахерские услуги</h3>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="table active">
+                    <table>
+                      <tbody>
+                        <thead>
+                          <td></td>
+                          <td></td>
+                          <td>Мастер</td>
+                          <td>Vip Мастер</td>
+                        </thead>
+                        <tr>
+                          <td>Фирменная укладка на горячие инструменты / брашинг</td>
+                          <td>
+                            <span class="tm">60 мин</span>
+                          </td>
+                          <td>3000</td>
+                          <td>3500</td>
+                        </tr>
+                        <tr>
+                          <td>Прическа вечерняя-коктельная</td>
+                          <td>
+                            <span class="tm">60 мин</span>
+                          </td>
+                          <td>4200</td>
+                          <td>4800</td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+                  </div>
+                </div>
+                <div class="cat-selected js-price-subcategory">
+                  <div class="tp">
+                    <h3>Брови и макияж</h3>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="table active">
+                    <table>
+                      <tbody>
+                        <thead>
+                          <td></td>
+                          <td></td>
+                          <td>Мастер</td>
+                          <td>Vip Мастер</td>
+                        </thead>
+                        <tr>
+                          <td>Макияж дневной/вечерний</td>
+                          <td>
+                            <span class="tm">60 мин</span>
+                          </td>
+                          <td>3500</td>
+                          <td>4500</td>
+                        </tr>
+                        <tr>
+                          <td>Коррекция+окрашивание бровей (хна)</td>
+                          <td>
+                            <span class="tm">60 мин</span>
+                          </td>
+                          <td>1800</td>
+                          <td>2200</td>
+                        </tr>
+                        <tr>
+                          <td>Коррекция+окрашивание бровей (краска)</td>
+                          <td>
+                            <span class="tm">60 мин</span>
+                          </td>
+                          <td>1650</td>
+                          <td>1900</td>
+                        </tr>
+                        <tr>
+                          <td>Гидрогелевая маска для лица (Южная Корея)</td>
+                          <td>
+                            <span class="tm">15 мин</span>
+                          </td>
+                          <td>1300</td>
+                          <td>1300</td>
+                        </tr>
+                        <tr>
+                          <td>Гидрогелевая патчи для глаз (Южная Корея)</td>
+                          <td>
+                            <span class="tm">15 мин</span>
+                          </td>
+                          <td>1100</td>
+                          <td>1100</td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+                  </div>
+                </div>
+                <div class="cat-selected js-price-subcategory">
+                  <div class="tp">
+                    <h3>Можно купить</h3>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="table active">
+                    <table>
+                      <tbody>
+                        <thead>
+                          <td></td>
+                          <td></td>
+                          <td>Мастер</td>
+                          <td>Vip Мастер</td>
+                        </thead>
+                        <tr>
+                          <td>Гидрогелевая маска для лица/патчи (Южная Корея)</td>
+                          <td>
+                          </td>
+                          <td>850</td>
+                          <td>850</td>
+                        </tr>
+                        <tr>
+                          <td>Крем для рук классический (Южная Корея)</td>
+                          <td>
+                          </td>
+                          <td>1000</td>
+                          <td>-</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" data-id="person-popup">
+      <div class="popup-outer">
+        <div class="popup-inner">
+          <div class="popup-cell">
+            <div class="close show640 show320 js-popup-close">
+              <div class="b b1"></div>
+              <div class="b b2"></div>
+            </div>
+            <div class="ov js-popup-close"></div>
+            <div class="price-popup popup-content">
+              <div class="close show1000 js-popup-close">
+                <div class="b b1"></div>
+                <div class="b b2"></div>
+              </div>
+              <h3>Условия пользования и обработки персональных данных</h3>
+              <div class="text">
+                <p style="font-size:18px;">
+                  <span>Договор на оказание бытовых услуг</span>
+                </p>
+                <p>
+                  <span>г. Москва </span>
+                </p>
+                <p>
+                  <span>Пользователь, зарегистрированный на сайте в сети Интернет www.legendnewyork.com, и лицо, акцептовавшее
+                    Заявку на оказание услуг (как эти термины определены в условиях оказания услуг, текст которых постоянно
+                    доступен в сети Интернет по адресу
+                    <a href="http://www.legendnewyork.com">www.legendnewyork.com</a> («Условия оказания услуг»), заключили настоящий договор на оказание бытовых
+                    услуг о нижеследующем.</span>
+                </p>
+                <ol>
+                  <li>
+                    <p>
+                      <span>Термины и определения</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>В настоящем договоре на оказание бытовых услуг, если из текста прямо не вытекает иное, следующие
+                            термины будут иметь указанные ниже значения:</span>
+                        </p>
+                        <p>
+                          <span>«Legend New York»&nbsp;или&nbsp;«LNY»&nbsp;Общество с ограниченной ответственностью «Ледженд Нью
+                            Йорк», ИНН 7702835275, адрес местонахождения: 129110, г. Москва, пер. Орлово-Давыдовский, д.1
+                            пом. III, в лице Генерального директора Махота Елены Владимировны, действующей на основании Устава.</span>
+                        </p>
+                        <p>
+                          <span> «Бытовые услуги»</span>
+                          <span>
+                            <span class="Apple-tab-span"> </span>
+                          </span>
+                          <span>Профессиональные услуги по маникюру, педикюру, массажу, стрижке, укладке, макияжу, а так же услуги
+                            няни и тренера по йоге, информация о которых доступна на Сайте в разделе «Услуги» – [</span>
+                          <span>указать адрес страницы в сети Интернет</span>
+                          <span>]. К каждой услуге применяется отдельный Тариф, в связи с чем, при выборе одной или нескольких
+                            услуг Пользователь также выбирает Тариф.</span>
+                        </p>
+                        <p>
+                          <span>«Договор»</span>
+                          <span>
+                            <span class="Apple-tab-span"> </span>
+                          </span>
+                          <span>Настоящий договор на оказание Бытовых услуг.</span>
+                        </p>
+                        <p>
+                          <span>«Заявка на оказание услуг»</span>
+                          <span>
+                            <span class="Apple-tab-span"> </span>
+                          </span>
+                          <span>Заявка на заключение Договора на оказание услуг, содержащая информацию, необходимую для оказания
+                            Бытовых услуг. Форма заявки определяется LNY и устанавливается в Приложении. </span>
+                        </p>
+                        <p>
+                          <span>«Мастер»</span>
+                          <span>
+                            <span class="Apple-tab-span"> </span>
+                          </span>
+                          <span>Юридическое или физическое лицо или индивидуальный предприниматель, оказывающие услуги по настоящему
+                            Договору.
+                          </span>
+                        </p>
+                        <p>
+                          <span>«Пользователь»</span>
+                          <span>
+                            <span class="Apple-tab-span"> </span>
+                          </span>
+                          <span>Любое дееспособное физическое лицо, заключившее договор с LNY, предметом которого является предоставление
+                            LNY неисключительного права использования Сайта и Приложения.</span>
+                        </p>
+                        <p>
+                          <span>«Приложение»</span>
+                          <span>
+                            <span class="Apple-tab-span"> </span>
+                          </span>
+                          <span>Программа для ЭВМ и мобильных устройств, доступ к которым предоставляется Пользователю и Мастеру
+                            по учетным данным (логину и паролю) после регистрации.</span>
+                        </p>
+                        <p>
+                          <span>«Сайт»</span>
+                          <span>
+                            <span class="Apple-tab-span"> </span>
+                          </span>
+                          <span>Совокупность информации, текстов, графических элементов, дизайна, изображений, фото и видеоматериалов
+                            и иных результатов интеллектуальной деятельности, а также программ для ЭВМ, содержащихся в информационной
+                            системе, обеспечивающей доступность такой информации в сети Интернет по сетевому адресу www.legendnewyork.com.</span>
+                        </p>
+                        <p>
+                          <span>«Стороны»</span>
+                          <span>
+                            <span class="Apple-tab-span"> </span>
+                          </span>
+                          <span>Пользователь и Мастер.</span>
+                        </p>
+                        <p>
+                          <span>«Тариф»</span>
+                          <span>
+                            <span class="Apple-tab-span"> </span>
+                          </span>
+                          <span>Стоимость оказания Бытовых услуг и размер вознаграждения LNY, информация о которых доступна при
+                            оформлении Заявки на оказание услуг. При выборе Тарифа Пользователю предоставляется информация:
+                            об условиях расчета стоимости Бытовых услуг и вознаграждения LNY; о стоимости выбранной услуги;
+                            об условиях отказа от исполнения Договора на оказание услуг; а также иная информация, предусмотренная
+                            функционалом Приложения и Сайта. </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Если в настоящем Договоре не определено иное, термины используемые с заглавной буквы имеют значение
+                            предусмотренное для них в Условиях оказания услуг. &nbsp;Все остальные термины и определения,
+                            встречающиеся в тексте Договора, толкуются Сторонами в соответствии с законодательством Российской
+                            Федерации и сложившимися обычными правилами толкования соответствующих терминов.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Названия заголовков (пунктов) Договора предназначены исключительно для удобства пользования текстом
+                            Договора и буквального юридического значения не имеют.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Предмет Договора</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Мастер оказывает Пользователю Бытовые услуги в порядке и сроки, определенные в Договоре, а Пользователь
+                            обязуется оплатить оказанные Мастером Бытовые услуги.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Порядок взаимодействия и оказания Бытовых услуг</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Стороны взаимодействуют посредством Сайта, Приложения и адресов электронной почты. </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Мастер оказывает Пользователю Бытовые услуги в соответствии с условиями Договора, Условиями оказания
+                            услуг (его приложениями), определенными в Заявке на оказание услуг, направленной Пользователем.
+                            С целью оказания Бытовых услуг Пользователь посредством Приложения формирует Заявку на оказание
+                            услуг. </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Порядок формирования и направления Заявки на оказание услуг определяется LNY и устанавливается
+                            в Приложении. При этом в Заявке на оказание услуг должна содержаться информация о:</span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>адрес для выезда Мастера;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>желаемое время прибытия Мастера (указывается точное время прибытия и/или сообщается о необходимости
+                                выезда Мастера в ближайшее время);</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>перечень выбранных Бытовых услуг;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>номере телефона Пользователя.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Заявка на оказание услуг, оформленная Пользователем, доступна Мастеру в Приложении. После размещения
+                            Заявки на оказание услуг в Приложении Мастер может принять Заявку на оказание услуг к исполнению
+                            и/или отказаться от оказания Бытовых услуг по такой Заявке на оказание услуг.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Мастер вправе отказаться от исполнения Договора на оказание услуг по принятой к исполнению Заявке
+                            на оказание услуг только в случае, если Мастер не может связаться с Пользователем по номеру телефона,
+                            указанному Пользователем в Заявке на оказание услуг, в течение 10 минут после прибытия Мастера
+                            по адресу, указанному Пользователем в Заявке на оказание услуг.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>В случае принятия Заявки на оказание услуг к исполнению, Мастер обязуется оказать Пользователю
+                            Бытовые услуги в срок и на условиях, указанных в Заявке на оказание услуг. В том числе, Мастер
+                            обязуется:
+                          </span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>оказывать услуги надлежащего качества;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>прибыть по адресу и во время максимально близкое к параметрам, указанным в Заявке на оказание
+                                услуг;
+                              </span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>посредством Приложения сообщить Пользователю о прибытии по адресу вызова, указанному в Заявке
+                                на оказание услуг;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>соблюдать правила оказания Бытовых услуг.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Мастер обязуется посредством Приложения сообщить LNY о начале оказания Бытовых услуг, а также о
+                            завершении оказания Бытовых услуг. В случае, если Мастер не предоставит LNY информацию, указанную
+                            в настоящем пункте, Бытовые услуги не будут считаться оказанными. </span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Сдача-приемка Бытовых услуг</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Стороны пришли к согласию, что актом об оказанных Бытовых услугах является Отчет об использовании
+                            Сайта и Приложения, составляемый в порядке и сроки, определенные Условиями оказания услуг. </span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Финансовые условия</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Стоимость Бытовых услуг по каждой Заявке на оказание услуг определяется в соответствии с Тарифами.
+                          </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Стороны пришли к согласию, что Пользователь перечисляет LNY денежные средства в счет оплаты Бытовых
+                            услуг Мастера. При этом обязательство Пользователя по оплате Бытовых услуг считается надлежаще
+                            исполненным с момента зачисления денежных средств на расчетный счет LNY.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Ответственность сторон</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>В случае нарушения срока выплаты вознаграждения, предусмотренного разделом 5.2 Договора, Пользователь
+                            выплачивает Мастеру неустойку в размере 0,01% от неоплаченной суммы за каждый день просрочки.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Порядок заключения и расторжения Договора</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Договор считается заключенным с момента принятия Мастером Заявки на оказание услуг к исполнению
+                            в соответствии с пунктом 3.3 Договора и действует до полного исполнения Сторонами обязательств
+                            из Договора.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Разрешение споров из Договора</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Все споры, разногласия и претензии, которые могут возникнуть в связи с исполнением, расторжением
+                            или признанием недействительным Договора, Стороны будут стремиться решить путем переговоров.
+                            Сторона, у которой возникли претензии и/или разногласия, направляет другой Стороне в порядке,
+                            предусмотренном пунктом 9 Договора или с помощью услуг почтовой связи, сообщение с указанием
+                            возникших претензий и/или разногласий. Сообщение должно содержать суть предъявляемого требования
+                            и доказательства, подтверждающие требование.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>В течение 5 (пяти) рабочих дней с момента получения указанного сообщения Сторона, получившая его,
+                            обязана направить ответ на это сообщение в аналогичном порядке.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>В случае если ответ на сообщение не будет получен направившей сообщение Стороной в течение срока,
+                            предусмотренного пунктом 8.2 Договора, либо если Стороны не придут к соглашению по возникшим
+                            претензиям и/или разногласиям, спор подлежит передаче на рассмотрение в судебном порядке.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Заключительные положения</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Настоящим Стороны подтверждают, что при исполнении (изменении, дополнении, прекращении) Договора,
+                            а также при ведении переписки по указанным вопросам, допускается использование аналогов собственноручной
+                            подписи Сторон. Стороны подтверждают, что все уведомления, сообщения, соглашения и документы
+                            в рамках исполнения Сторонами обязательств, возникших из Договора, подписанные аналогами собственноручной
+                            подписи Сторон, имеют юридическую силу и обязательны для исполнения Сторонами. Под аналогами
+                            собственноручной подписи понимаются уполномоченные адреса электронной почты и учетные данные
+                            к Приложению Мастера и Пользователя.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Стороны признают, что все уведомления, сообщения, соглашения, документы и письма, направленные
+                            с использованием уполномоченных адресов электронной почт и Приложения, считаются направленными
+                            и подписанными Сторонами.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Адресами электронной почты Сторон признаются:</span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>для Пользователя: адрес электронной почты, указанный при регистрации на Сайте;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>для Мастера: адрес, электронной почты, указанный в Приложении.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Стороны обязуются обеспечивать конфиденциальность сведений и информации, необходимых для доступа
+                            к уполномоченным адресам электронной почты и Приложению, не допускать разглашение такой информации
+                            и передачу третьим лицам. Стороны самостоятельно определяют порядок ограничения доступа к такой
+                            информации.
+                          </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>До момента получения информации о нарушения режима конфиденциальности, все действия и документы,
+                            совершенные и направленные с помощью уполномоченного адреса электронной почты Стороны, даже если
+                            такие действия и документы были совершены и направлены иными лицами, считаются совершенными и
+                            направленными такой Стороной. В этом случае права и обязанности, а также ответственность наступают
+                            у такой Стороны.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Во всем остальном, что не урегулировано Договором, Стороны руководствуются действующим законодательством
+                            Российской Федерации.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+                <p style="font-size:18px;">
+                  <span>Условия оказания услуг</span>
+                </p>
+                <p>
+                  <span>(вместе с договором о предоставлении неисключительной лицензии и правилами пользования программным обеспечением)
+                  </span>
+                </p>
+                <p>
+                  <span>г. Москва</span>
+                </p>
+                <p>
+                  <span>Legend New York с одной стороны и лицо, акцептовавшее оферту, размещенную в Приложении и в сети Интернет
+                    по постоянному адресу www.legendnewyork.com, с другой стороны, заключили настоящий договор о нижеследующем:</span>
+                </p>
+                <ol>
+                  <li>
+                    <p>
+                      <span>Термины и определения</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>В настоящем договоре, если из текста прямо не вытекает иное, следующие термины будут иметь указанные
+                            ниже значения:</span>
+                        </p>
+                        <p>
+                          <span>«Legend New York»&nbsp;или&nbsp;«LNY»&nbsp;Общество с ограниченной ответственностью «Ледженд Нью
+                            Йорк», ИНН 7702835275, адрес местонахождения: 129110, г. Москва, пер. Орлово-Давыдовский, д.1
+                            пом. III, в лице Генерального директора Махота Елены Владимировны, действующей на основании Устава.</span>
+                        </p>
+                        <p>
+                          <span>«Банк» Кредитная организация, осуществляющая по указанию LNY прием и перевод денежных средств,
+                            предоставленных Пользователем с использованием Банковской карты в соответствии с Договором.</span>
+                        </p>
+                        <p>
+                          <span>«Банковская карта» Платежная карта платежных систем Visa, Mastercard, American Express, информацию
+                            о которой Пользователь предоставил в Приложении.</span>
+                        </p>
+                        <p>
+                          <span>«Бытовые услуги»</span>
+                          <span>
+                            <span class="Apple-tab-span"> </span>
+                          </span>
+                          <span>Профессиональные услуги по маникюру, педикюру, массажу, стрижке, укладке, макияжу, а так же услуги
+                            няни и тренера по йоге, информация о которых доступна на Сайте в разделе «Услуги» – www.legendnewyork.com.
+                            К каждой услуге применяется отдельный Тариф, в связи с чем, при выборе одной или нескольких услуг
+                            Пользователь также выбирает Тариф.</span>
+                        </p>
+                        <p>
+                          <span>«Гражданский Кодекс»&nbsp;Гражданский кодекс Российской Федерации (с изменениями и дополнениями).</span>
+                        </p>
+                        <p>
+                          <span>«Договор»&nbsp;Настоящий договор, текст которого постоянно доступен в Приложении и по адресу в
+                            сети Интернет www.legendnewyork.com.</span>
+                        </p>
+                        <p>
+                          <span>«Договор на оказание услуг»&nbsp;Договор на оказание бытовых услуг, заключенный между Мастером
+                            и Пользователем, текст которого постоянно доступен в Приложении и по адресу в сети Интернет www.legendnewyork.com.</span>
+                        </p>
+                        <p>
+                          <span>«Заявка на оказание услуг»&nbsp;Заявка на заключение Договора на оказание услуг, содержащая информацию,
+                            необходимую для оказания Бытовых услуг.</span>
+                        </p>
+                        <p>
+                          <span>«Мастер»&nbsp;Физическое лицо или индивидуальный предприниматель, оказывающие услуги по Договору
+                            на оказание услуг.</span>
+                        </p>
+                        <p>
+                          <span>«Отчет»&nbsp;Отчет Пользователя об использовании Сайта и Приложения в соответствии с Договором.
+                          </span>
+                        </p>
+                        <p>
+                          <span>«Персональные данные»&nbsp;Любая информация, относящаяся прямо или косвенно к Пользователю и/или
+                            третьим лицам, информация о которых предоставляется Пользователем с использованием Приложения,
+                            Сайта и/или адреса электронной почты. </span>
+                        </p>
+                        <p>
+                          <span>«Пользователь»&nbsp;Дееспособное физическое лицо, заключившее Договор.</span>
+                        </p>
+                        <p>
+                          <span>«Политика конфиденциальности»&nbsp;политика конфиденциальности LNY, разработанная в соответствии
+                            с Федеральным законом от 27 июля 2006 г. N 152-ФЗ «О защите персональных данных», приведенная
+                            в Приложении №1 к настоящему Договору.</span>
+                        </p>
+                        <p>
+                          <span>«Правила расчетов»&nbsp;Правила расчетов за оказанные Мастером Бытовые услуги и предоставленное
+                            LNY право использования Сайта и Приложения, приведенные в Приложении №2 к настоящему Договору.</span>
+                        </p>
+                        <p>
+                          <span>«Приложение»&nbsp;Программа для ЭВМ и мобильных устройств, доступ к которой предоставляется Пользователю
+                            по учетным данным (логину и паролю) и посредством которой осуществляется взаимодействие Мастера
+                            и Пользователя. </span>
+                        </p>
+                        <p>
+                          <span>«Сайт»&nbsp;Совокупность информации, текстов, графических элементов, дизайна, изображений, фото
+                            и видеоматериалов и иных результатов интеллектуальной деятельности, а также программ для ЭВМ,
+                            содержащихся в информационной системе, обеспечивающей доступность такой информации в сети Интернет
+                            по сетевому адресу www.legendnewyork.com.</span>
+                        </p>
+                        <p>
+                          <span>«Стороны»&nbsp;LNY и Пользователь.</span>
+                        </p>
+                        <p>
+                          <span>«Тариф»&nbsp;Стоимость оказания Бытовых услуг и размер вознаграждения LNY, информация о которых
+                            доступна при оформлении Заявки на оказание услуг. При выборе Тарифа Пользователю предоставляется
+                            информация: об условиях расчета стоимости Бытовых услуг и вознаграждения LNY; о стоимости выбранной
+                            услуги; об условиях отказа от исполнения Договора на оказание услуг; а также иная информация,
+                            предусмотренная функционалом Приложения и Сайта.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Толкование</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Все остальные термины и определения, встречающиеся в тексте Договора, толкуются Сторонами в соответствии
+                            с законодательством Российской Федерации и сложившимися обычными правилами толкования соответствующих
+                            терминов.
+                          </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Названия заголовков (пунктов) Договора предназначены исключительно для удобства пользования текстом
+                            Договора и буквального юридического значения не имеют.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Настоящий Договор включает также приложения, которые являются его неотъемлемой частью.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Порядок заключения Договора</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Текст Договора, постоянно размещенный в Приложении и в сети Интернет по сетевому адресу www.legendnewyork.com
+                            и доступный при регистрации на Сайте или в Приложении, содержит все существенные условия Договора
+                            и является предложением LNY заключить Договор с любым полностью дееспособным третьим лицом, использующим
+                            Сайт и/или Приложение, на указанных в тексте Договора условиях. Таким образом, текст Договора
+                            является публичной офертой в соответствии с пунктом 2 статьи 437 Гражданского Кодекса. </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Надлежащим акцептом настоящей оферты в соответствии со статьей 438 Гражданского Кодекса считается
+                            последовательное осуществление третьим лицом следующих действий:</span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>Переход по ссылке на Сайте или в Приложении для регистрации в качестве Пользователя; </span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>Ознакомление с условиями Договора;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>Заполнение всех полей в регистрационной форме на странице регистрации на Сайте или в Приложении
+                                в качестве Пользователя;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>Проставление символа в специальном поле под заголовком «Я принимаю условия оказания услуг»;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>Подтверждение регистрации на Сайте или в Приложении путем нажатия на кнопку «Зарегистрироваться»;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>Ввод на Сайте или в Приложении проверочного кода, направленного на указанный номер мобильного
+                                телефона. </span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>По окончанию регистрации Пользователю предоставляется доступ к личному кабинету на Сайте и в Приложении
+                            по учетным данным – адресу электронной почты и паролю, указанным при регистрации, а также предоставляется
+                            возможность оформлять Заявки на услуги. Пароль может быть изменен Пользователем в любое время
+                            после регистрации. </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Договор действует в течение 1 года. Договор продлевается на тот же срок без заключения какого-либо
+                            дополнительного соглашения в случае, если ни одна из Сторон не заявила о намерении прекратить
+                            действие Договора по истечении срока его действия. При этом такое заявление Сторона должна направить
+                            другой Стороне не позднее 30 календарных дней до даты очередного истечения срока действия Договора.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Предмет Договора</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>LNY предоставляет Пользователю право на использование Сайта, Приложения и их программных средств
+                            по их прямому назначению, как то предусмотрено явными пользовательскими функциями Сайта и Приложения,
+                            на условиях простой (неисключительной) лицензии, а Пользователь обязуется выплачивать LNY вознаграждение
+                            за предоставленное право в размере, порядке и сроки, определенные разделом 9 Договора.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Указанная в пункте 4.1 Договора лицензия предоставляется Пользователю соответственно на срок действия
+                            Договора, и в пределах территории, на которой Сайт и Приложение остается доступным для Пользователя.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Во избежание сомнений Пользователю запрещается:</span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>обходить технические ограничения, установленные на Сайте и в Приложении;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>изучать технологию, декомпилировать или дизассемблировать Сайт и Приложения за исключением
+                                случаев, прямо предусмотренных законодательством Российской Федерации; </span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>создавать копии экземпляров Сайта и Приложения, а также его внешнего оформления (дизайна);
+                              </span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>изменять Сайт и Приложение, каким бы то ни было способом;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>совершать действия, направленные на изменение функционирования и работоспособности Сайта и
+                                Приложения;
+                              </span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>предоставлять доступ к личному кабинету в Приложении и на Сайте третьему лицу (в том числе,
+                                заключать Договор оказания услуг в интересах третьих лиц); и</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>осуществлять указанные выше действия в отношении любой части Сайта и Приложения.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Использование Сайта и Приложения</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Пользователь посредством Сайта и Приложения имеет возможность:</span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>оформить Заявку на услугу;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>заключить с Мастером Договор на оказание услуг;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>получить информацию об Отчетах;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>оплатить стоимость услуги; и</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>совершать иные действия, предусмотренные явными функциями Сайта и Приложения.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Во избежание разночтений Стороны подтверждают понимание того, что LNY не оказывает Пользователю
+                            Бытовые услуги по Договору на оказание услуг, информация о которых размещена на Сайте и в Приложении.
+                            Услуги оказывает Мастер по Договору на оказание услуг в соответствии с Заявкой на оказание услуг,
+                            оформленной Пользователем. </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Пользователь обязан пользоваться Сайтом и Приложением добросовестно, не нарушая законодательство
+                            Российской Федерации, права третьих лиц, нормы морали и нравственности, не используя аппаратные
+                            либо технические средства, способные вносить изменения в работу Сайта и Приложения, которые не
+                            предусмотрены при обычном их использовании.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Порядок оформления Заявки на оказание услуги</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Для оформления Заявки на оказание услуги Пользователь на Сайте или в Приложении:</span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>Выбирает Бытовые услуги, которые необходимо оказать;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>предоставляет LNY информацию, необходимую для оказания Бытовых услуг, в том числе указывает
+                                (или подтверждает корректность информации о Пользователе, автоматически добавленной программой
+                                в Заявку на оказание услуги): </span>
+                            </p>
+                          </li>
+                          <ol>
+                            <li>
+                              <p>
+                                <span>полный адрес, по которому должны быть оказаны услуги;</span>
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <span>желаемое время прибытия Мастера (Пользователем указывается точное время прибытия и/или сообщается
+                                  о необходимости выезда Мастера в ближайшее время);</span>
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <span>номер телефона Пользователя; и</span>
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <span>иную информацию, необходимую для оказания Бытовых услуг, предоставление которой предусмотрено
+                                  функционалом Приложения. </span>
+                              </p>
+                            </li>
+                          </ol>
+                          <li>
+                            <p>
+                              <span>указывает Банковскую карту, по которой будет производиться расчет в соответствии с разделом
+                                9 Договора;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>совершает иные действия, предусмотренные функционалом Сайта и Приложения при оформлении Заявки
+                                на оказание услуг.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>После оформления Пользователем Заявки на оказание услуг LNY уведомляет Пользователя об акцептовании
+                            Мастером Заявки на оказание услуг или о необходимости предоставить дополнительную информацию
+                            для осуществления выезда и оказания Бытовых услуг. Пользователь также может быть уведомлен о
+                            принятии Заявки на оказание услуг по номеру телефону, указанному Пользователем в Заявке на оказание
+                            услуг, а также любым иным образом по усмотрению LNY. </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Заявка на оказание услуг, оформленная Пользователем и доступная Мастерам, является офертой Пользователя
+                            на заключение Договора на оказание услуг. Договор на оказание услуг считается заключенным между
+                            Пользователем и Мастером с момента принятия Мастером Заявки на оказание услуг к исполнению. О
+                            принятии Заявки на оказание услуг к исполнению Пользователь уведомляется посредством Сайта, Приложения
+                            и/или путем направления сообщения на номер телефона, указанный в Заявке на оказание услуг. При
+                            этом Пользователю сообщается информация о Мастере, выбранных Бытовых услугах, а также иная информация,
+                            необходимая для оказания Бытовых услуг, по усмотрению LNY и/или Мастера.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Бытовые услуги оказываются Пользователю Мастером в сроки, соответствующие определенным в Заявке
+                            на оказание услуг, если только Пользователь не откажется от оказания Бытовых услуг по Заявке
+                            на оказание услуг в порядке, определенном разделом &nbsp;7 (</span>
+                          <span>Отмена Заявки на оказание услуг</span>
+                          <span>) ниже.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Отмена Заявки на оказание услуг</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Под отменой Заявки на оказание услуг понимается односторонний отказ Пользователя от исполнения
+                            Договора на оказание услуг по принятой Мастером Заявке на оказание услуг. Пользователь вправе
+                            о отменить Заявку на оказание услуг в следующих случаях </span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>в случае задержки прибытия Мастера более чем на 30 минут от времени, указанного Пользователем
+                                в Заявке на оказание услуг;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>не позднее, чем за 120 минут до времени прибытия Мастера, указанного Пользователем в Заявке
+                                на оказание услуг;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>в любое другое время, в том числе, после прибытия Мастера по адресу, указанному Пользователем
+                                в Заявке на оказание услуг.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Если Пользователь отменил Заявку на оказание услуг в соответствии с пунктами 7.1.1 и 7.1.2 Договора,
+                            Пользователь не оплачивает Бытовые услуги и вознаграждение LNY по Договору.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Если Пользователь отменил Заявку на оказание услуг в соответствии с пунктом 7.1.3 Договора, Пользователь
+                            обязан оплатить полную стоимость Бытовых услуг и вознаграждение LNY по Договору в соответствие
+                            со следующими тарифами:</span>
+                        </p>
+                        <ol>
+                          <li>Если пользователь отменил заказ менее, чем за 120 минут от времени начала заказа, то он обязан
+                            оплатить не менее 20% от стоимости заказа, рассчитанной при осуществлении заказа клиентом.</li>
+                          <li>Если пользователь отменил заказ менее чем за 60 минут от времени начала заказа, то он обязан оплатить
+                            не менее 50% от стоимости заказа, рассчитанной при осуществлении заказа клиентом.</li>
+                          <li>Если пользователь отменил заказ после прибытия мастера ко времени заказа, то он обязан оплатить
+                            полную стоимость заказа.</li>
+                        </ol>
+                      </li>
+                      <li>Мастер вправе отказаться от исполнения Договора на оказание услуг по принятой Заявке на оказание услуг
+                        в случае, если Мастер не может связаться с Пользователем по номеру телефона, указанному Пользователем
+                        в Заявке на оказание услуг, в течение 15 минут после прибытия по адресу, указанному Пользователем
+                        в Заявке на оказание услуг. В таком случае Пользователь обязан оплатить полную стоимость Бытовых
+                        услуг и вознаграждение LNY в соответствии с Тарифом, указанным при оформлении Заявки на оказание
+                        услуг.
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Отчетность</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Пользователю в личном кабинете на Сайте и в Приложении в любой момент доступна информация об использовании
+                            Сайта и Приложения (в том числе, информация о исполненных Договорах на оказание услуг, оформленных
+                            Заявках на оказание услуг, а также иная информация, относящаяся к использованию Пользователем
+                            Сайта и Приложения).</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>По мере исполнения каждого Договора на оказание услуг LNY направляет на адрес электронной почты
+                            Пользователя сообщение, содержащее информацию об исполненном Договоре на оказание услуг, а также
+                            обновляет информацию, указанную в пункте 8.1 Договора. Информация об исполненном Договоре на
+                            оказание услуг, направленная на адрес электронной почты Пользователя, является Отчетом. Форма
+                            Отчета определяется LNY по собственному усмотрению, при этом в Отчете указывается адрес и время
+                            прибытия Мастера, информация о Мастере, который оказывал Бытовые услуги, а также стоимость Бытовых
+                            услуг. В Отчете может содержаться иная информация, определяемая LNY по собственному усмотрению.
+                            Отчет считается полученным Пользователем с момента его направления LNY на адрес электронной почты
+                            Пользователя.
+                          </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>В случае если Пользователь не заявил о своих возражениях относительно информации, указанной в пункте
+                            8.2 Договора, в течение 2 календарных дней с момента получения Отчета, Пользователь считается
+                            принявшим Отчет LNY, а обязательства LNY по Договору в части предоставления права использования
+                            Сайта и Приложения с целью оформления Заявки на оказание услуг считаются надлежаще исполненными.
+                          </span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Финансовые условия</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>В соответствии с Договором об оказании услуг Пользователь исполняет обязанность по оплате Бытовых
+                            услуг, оказанных Мастером по Заявке на оказание услуг, оформленной Пользователем, путем перевода
+                            денежных средств на расчетный счет LNY и/или третьего лица, определенного LNY.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>В соответствии с пунктом 4.1 Договора за предоставленное право использования Сайта и Приложения
+                            Пользователь обязуется выплатить LNY вознаграждение, размер которого определяется LNY исходя
+                            из стоимости Бытовых услуг по Договору об оказании услуг, оказанных по Заявке на оказание услуг,
+                            оформленной Пользователем и исполненной Мастером, и включается в Тариф и/или указывается LNY
+                            отдельно.
+                          </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Пользователь обязуется оплатить стоимость Бытовых услуг и выплатить LNY вознаграждение в порядке
+                            и сроки, определенные Правилами расчетов (Приложение №2).</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Персональные данные</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Пользователь дает LNY согласие на обработку информации, в том числе, персональных данных Пользователя,
+                            предоставленных при регистрации на Сайте или в Приложении, а также в процессе использования Приложения,
+                            в том числе, но не ограничиваясь: </span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>фамилия, имя;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>адрес электронной почты;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>контактный телефон;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>адрес проживания; и</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>иная информация, указываемая Пользователем в Приложении и/или предоставляемая LNY с использованием
+                                адреса электронной почты Пользователя. </span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Обработка персональных данных означает запись, систематизацию, накопление, хранение, уточнение
+                            (обновление, изменение), извлечение, использование, передачу (распространение, предоставление,
+                            доступ), в том числе трансграничную, обезличивание, блокирование, удаление, уничтожение персональных
+                            данных.
+                          </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Обработка персональных данных производится в целях исполнения Сторонами обязательств по Договору,
+                            а также в целях направления на адрес электронной почты Пользователя сообщений информационного
+                            и иного характера и, если применимо, в целях исполнения Сторонами и Мастером обязательств из
+                            Договора на оказание услуг.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Пользователь может в любое время отозвать согласие на обработку персональных данных, направив LNY
+                            соответствующее письменное уведомление на адрес, указанный в пункте 1.1 Договора, заказным письмом
+                            с уведомлением о вручении. При этом LNY вправе продолжить обработку персональных данных Пользователя
+                            в предусмотренных законом случаях.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Дополнительные положения в отношении обработки персональных данных содержаться в Политике конфиденциальности
+                            (Приложение №1) ином документе, размещенном на Сайте и в Приложении.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Пользователь дает согласие на получение рекламных материалов от LNY, его аффилированных лиц, либо
+                            от иных лиц по поручению LNY на адрес электронной почты и телефон, указанные Пользователем при
+                            регистрации на Сайте или в Приложении.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Согласие на получение рекламных материалов может быть отозвано Пользователем в любое время путем
+                            направления LNY соответствующего письменного уведомления на адрес, указанный в пункте 1.1 Договора,
+                            либо путем совершения действий, указанных в сообщениях (электронных письмах), содержащих такие
+                            материалы.
+                          </span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Особые условия</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Сайт и Приложение может содержать ссылки на другие сайты в сети Интернет (сайты третьих лиц). Указанные
+                            сайты и их контент не проверяются LNY на соответствие тем или иным требованиям (достоверности,
+                            полноты, законности и т.п.). LNY не несет ответственности за любую информацию, материалы, размещенные
+                            на сайтах третьих лиц, к которым Пользователь получает доступ с использованием Сайта и Приложения,
+                            в том числе, за любые мнения или утверждения, выраженные на сайтах третьих лиц, рекламу и т.п.,
+                            а также за доступность таких сайтов или контента и последствия их использования Пользователем.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY не гарантирует, что Сайт и Приложение соответствует требованиям Пользователя, что доступ к
+                            Сайту и Приложению будет предоставляться непрерывно, быстро, надежно и без ошибок.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Сайт, Приложение и их программные средства предоставляются «Как есть». На Пользователе лежит риск
+                            использования Сайта и Приложения. LNY, операторы проводной и беспроводной связи, по сетям которых
+                            предоставляется доступ к Сайту и Приложению, аффилированные лица, поставщики, агенты LNY не предоставляют
+                            каких бы то ни было гарантий в отношении Сайта и Приложения.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Программно-аппаратные ошибки, как на стороне LNY, так и на стороне Пользователя, приведшие к невозможности
+                            получения Пользователем доступа к Сайту и/или Приложению, являются основанием освобождения от
+                            ответственности за неисполнение обязательств LNY по Договору.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Ответственность</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>LNY несет ответственность за неисполнение или ненадлежащие исполнение обязательств из Договора
+                            только при наличии вины.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY не отвечает за неисполнение или ненадлежащее исполнение Мастером обязательств по Договору на
+                            оказание услуг. LNY также не отвечает за качество оказанных Пользователю Бытовых услуг. В случае
+                            наличия у Пользователя претензий к качеству оказанных Бытовых услуг, Пользователь предъявляет
+                            соответствующие требования к Мастеру.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Пользователь несет риски указания недостоверной информации при оформлении Заявки на оказание услуг
+                            или при использовании Сайта и Приложения.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>В случае нарушения Пользователем обязательств по оплате стоимости Бытовых услуг, Пользователь выплачивает
+                            LNY неустойку в размере 0,1 % от неоплаченной суммы за каждый день просрочки. LNY вправе не исполнять
+                            обязательства из Договора до полной уплаты Пользователем задолженности по Договору.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>В случае нарушения Пользователем условий Договора, LNY вправе заблокировать Приложение, запретить
+                            либо ограничить доступ к определенным или всем функциям Сайта и Приложения. </span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Порядок разрешения споров</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Все споры, разногласия и претензии, которые могут возникнуть в связи с исполнением, расторжением
+                            или признанием недействительным Договора, Стороны будут стремиться решить путем переговоров.
+                            Сторона, у которой возникли претензии и/или разногласия, направляет другой Стороне в порядке,
+                            предусмотренном пунктом Договора или с помощью услуг почтовой связи, сообщение с указанием возникших
+                            претензий и/или разногласий. Сообщение должно содержать суть предъявляемого требования и доказательства,
+                            подтверждающие требование.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>В течение 5 рабочих дней с момента получения указанного сообщения Сторона, получившая его, обязана
+                            направить ответ на это сообщение в аналогичном порядке.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>В случае если ответ на сообщение не будет получен направившей сообщение Стороной в течение срока,
+                            предусмотренного пунктом 13.2 Договора, либо если Стороны не придут к соглашению по возникшим
+                            претензиям и/или разногласиям, спор подлежит передаче на рассмотрение в судебном порядке.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Изменение условий Договора</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>LNY вправе в одностороннем порядке изменять условия Договора, при этом такие изменения вступают
+                            в силу в течение 1 дня с момента опубликования новой версии Договора на Сайте или в Приложении
+                            и направления Пользователю новой версии Договора по уполномоченному адресу электронной почты
+                            Пользователя.
+                          </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Пользователь обязан ознакомиться с новой версией Договора. Продолжение использования функций Приложения
+                            и Сайта будет означать согласие Пользователя с условиями новой версии Договора. Если Пользователь
+                            не согласен с условиями новой версии Договора, он направляет LNY сообщение в письменном виде
+                            о расторжении Договора.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Заключительные положения</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Настоящим Стороны подтверждают, что при исполнении (изменении, дополнении, прекращении) Договора,
+                            а также при ведении переписки по указанным вопросам, допускается использование аналогов собственноручной
+                            подписи Сторон. Стороны подтверждают, что все уведомления, сообщения, соглашения и документы
+                            в рамках исполнения Сторонами обязательств, возникших из Договора, подписанные аналогами собственноручной
+                            подписи Сторон, имеют юридическую силу и обязательны для исполнения Сторонами. Под аналогами
+                            собственноручной подписи понимаются уполномоченные адреса электронной почты и учетные данные
+                            к личному кабинету в Приложении и на Сайте.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Стороны признают, что все уведомления, сообщения, соглашения, документы и письма, направленные
+                            с использованием электронной почты, считаются направленными и подписанными Сторонами. Пользователь
+                            признает, что все действия, совершенные с использованием личного кабинета в Приложении и на Сайте
+                            (в том числе, направление уведомление, сообщений и совершение иных действий, предусмотренных
+                            функционалом Сайта и Приложения), считаются совершенными Пользователем.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Адресами электронной почты Сторон признаются:</span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>для LNY: support@legend-ny.ru;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>для Пользователя: адрес электронной почты, указанный Пользователем при регистрации на Сайте
+                                или в Приложении.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Стороны обязуются обеспечивать конфиденциальность сведений и информации, необходимых для доступа
+                            к адресам электронной почты и личному кабинету на Сайте и в Приложении, не допускать разглашение
+                            такой информации и передачу третьим лицам. Стороны самостоятельно определяют порядок ограничения
+                            доступа к такой информации.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>До момента получения от второй Стороны информации о нарушения режима конфиденциальности, все действия
+                            и документы, совершенные и направленные с помощью уполномоченного адреса электронной почты второй
+                            Стороны, даже если такие действия и документы были совершены и направлены иными лицами, считаются
+                            совершенными и направленными такой второй Стороной. В этом случае права и обязанности, а также
+                            ответственность наступают у такой второй Стороны.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Признание судом какого-либо положения Договора недействительным или не подлежащим принудительному
+                            исполнению не влечет недействительности иных положений Договора.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Во всем остальном, что не урегулировано Договором, Стороны руководствуются действующим законодательством
+                            Российской Федерации.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Пользователь подтверждает, что ознакомился со всеми положениями Договора, понимает и принимает
+                            их.
+                          </span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+                <p>
+                  <span>Приложение 1</span>
+                  <span>
+                  </span>
+                  <span>Политика конфиденциальности</span>
+                </p>
+                <ol>
+                  <li>
+                    <p>
+                      <span>Информация, получаемая LNY</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>LNY собирает, получает доступ и использует в определенных Политикой конфиденциальности целях Персональные
+                            данные, техническую и иную информацию, связанную с Пользователем и/или третьими лицами, использующими
+                            Приложение и Сайт, либо информация о которых предоставляется Пользователем.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Техническая информация не является Персональными данными, однако LNY использует файлы cookies,
+                            которые позволяют идентифицировать Пользователя. Файлы cookies — это текстовые файлы, доступные
+                            LNY, для обработки информации об активности Пользователя, включая информацию о том, какие страницы
+                            посещал Пользователь и о времени, которое Пользователь провел на странице. Пользователь может
+                            отключить возможность использования файлов cookies в настройках браузера.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY осуществляет Обработку только тех Персональных данных, которые Пользователь предоставил LNY
+                            посредством Приложения, Сайта и/или в рамках исполнения Договора. Под Персональными данными,
+                            в частности, может пониматься следующая информация:</span>
+                        </p>
+                      </li>
+                      <ol>
+                        <li>
+                          <p>
+                            <span>фамилия, имя, отчество;</span>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <span>паспортные данные;</span>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <span>адрес электронной почты;</span>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <span>контактный телефон;</span>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <span>дата рождения; и</span>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <span>иная информация, указываемая Пользователем в Приложении, на Сайте и/или предоставляемая LNY с
+                              использованием адреса электронной почты Пользователя. </span>
+                          </p>
+                        </li>
+                      </ol>
+                      <li>
+                        <p>
+                          <span>LNY обрабатывает Персональные данные, техническую информацию и иную информацию Пользователя в течение
+                            10 лет с момента предоставления такой информации.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Персональные данные</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Пользователь дает свое согласие LNY на обработку Персональных данных, в том числе на передачу таких
+                            Персональных данных третьим лицам во исполнение Договора, даже когда такая передача осуществляется
+                            на территорию иных государств (трансграничная передача).</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Пользователь дает согласие на получение информационных рассылок и рекламных материалов от LNY,
+                            либо от иных лиц по поручению LNY, на адрес электронной почты и контактный телефон, указанные
+                            Пользователем при регистрации на Сайте. </span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Цели использования информации, предоставляемой Пользователем</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Информация, предоставленная Пользователем, используется LNY исключительно в целях:</span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>исполнения LNY обязательств перед Пользователем и третьими лицами по Договору;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>установления и поддержания связи с Пользователем;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>направления на адрес электронной почты Пользователя сообщений информационного и иного характера;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>улучшения качества обслуживания и модернизации Сайта;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>регистрации Пользователя и идентификации Пользователя в Приложении и на Сайте;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>осуществления правосудия, в случае поступления в адрес LNY соответствующего запроса уполномоченных
+                                органов;
+                              </span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>исполнения требований российского законодательства.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Меры, принимаемые для защиты предоставляемой Пользователем информации, и гарантии LNY</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>LNY принимает необходимые и достаточные правовые, организационные и технические меры для защиты
+                            информации, предоставляемой Пользователями, от неправомерного или случайного доступа, уничтожения,
+                            изменения, блокирования, копирования, распространения, а также от иных неправомерных действий
+                            с ней третьих лиц, путем ограничения доступа к такой информации иных пользователей Сайта, сотрудников
+                            и партнеров LNY, третьих лиц (за исключением предоставления LNY информации, необходимой для исполнения
+                            LNY обязательств перед Пользователем и требований российского законодательства), а также наложения
+                            на таких лиц санкций за нарушение режима конфиденциальности в отношении таких данных.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY гарантирует, что предоставленная Пользователями информация не объединяется со статистическими
+                            данными, не предоставляется третьим лицам и не разглашается, за исключением случаев, предусмотренных
+                            в Политике конфиденциальности.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY не продаёт и не передаёт информацию о Пользователях отдельно. Такая информация может передаваться
+                            только при частичной или полной реорганизации LNY.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY предпринимает технические и организационные меры по предоставлению Пользователю возможности
+                            получать доступ к предоставленной им информации и редактировать такую информацию.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Права LNY</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>LNY вправе проводить статистические и иные исследования на основе обезличенной информации, предоставленной
+                            Пользователем. LNY вправе предоставлять доступ к таким исследованиям третьим лицам. Пользователь
+                            дает свое согласие на такие исследования путем принятия Политики конфиденциальности. </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY вправе предоставить информацию о Пользователях правоохранительным органам либо иным государственным
+                            органам в рамках судебного процесса или в рамках проведения расследования на основании судебного
+                            решения, принудительно исполнимого запроса или в порядке сотрудничества, а также в иных случаях,
+                            предусмотренных российским законодательством.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY вправе предоставить информацию о Пользователях третьим лицам для выявления и пресечения мошеннических
+                            действий, для устранения технических неполадок или проблем с безопасностью.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY вправе предоставлять доступ к информации о Пользователе третьим лицам, если такая передача
+                            необходима для исполнения LNY обязательств перед Пользователем по заключенным с Пользователем
+                            соглашениям.
+                          </span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Права Пользователя</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Пользователь может в любое время удалить или изменить информацию, предоставляемую Пользователем,
+                            путем совершения необходимых для этого действий на Сайте, а при отсутствии такой возможности
+                            — обратившись к LNY по адресу электронной почты — support@legend-ny.ru. При этом Пользователь
+                            понимает, что LNY вправе продолжить использование такой информации в допустимых российским законодательством
+                            случаях. </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Согласие на получение информационных рассылок и рекламных материалов может быть отозвано Пользователем
+                            в любое время путем направления LNY соответствующего уведомления тем же способом.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Новые редакции</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>LNY оставляет за собой право вносить изменения в Политику конфиденциальности. На Пользователе лежит
+                            обязанность при каждом обращении к Сайту знакомиться с текстом Политики конфиденциальности. </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Новая редакция Политики конфиденциальности вступает в силу с момента ее размещения на Сайте и/или
+                            в Приложении. Продолжение пользования Приложения после публикации новой редакции Политики конфиденциальности
+                            на Сайте и/или в Приложении означает принятие Политики конфиденциальности и ее условий Пользователем.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>В случае несогласия с условиями Политики конфиденциальности Пользователь не должен пользоваться
+                            Приложением.
+                          </span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Исключение противоречий</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>В случае, когда соглашения между LNY и Пользователем содержат положения об использовании персональной
+                            информации и/или Персональных данных, применяются положения Политики конфиденциальности и таких
+                            соглашений в части, не противоречащей Политике конфиденциальности.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+                <p>
+                  <span>Приложение 2</span>
+                  <span>
+                    <br class="kix-line-break">
+                  </span>
+                  <span>Правила расчетов</span>
+                </p>
+                <ol>
+                  <li>
+                    <p>
+                      <span>Общие положения</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Правила расчетов определяют порядок оплаты стоимости Бытовых услуг, оказанных Пользователю Мастером
+                            по Заявке на оказание услуг в соответствии с Договором на оказание услуг, и выплаты LNY вознаграждения
+                            за предоставление права использования Сайта и Приложения по Договору.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Размер денежных средств, подлежащих компенсации и выплате LNY, определяется Сторонами в соответствии
+                            с разделом 9 Договора.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Расчеты между сторонами происходят только в безналичном порядке с использованием Банковской карты.
+                            Для оформления Заявки на оказание услуг Пользователь должен зарегистрировать Банковскую карту
+                            в Приложении.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Регистрация Банковской карты</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Для регистрации Банковской карты Пользователь в Приложении предоставляет LNY следующую информацию:</span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>номер Банковской карты;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>имя владельца Банковской карты;</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>срок действия Банковской карты; и</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>защитный код Банковской карты.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY в срок, не превышающий 1 рабочего дня с момента предоставления Пользователем информации о Банковской
+                            карте, подтверждает регистрацию Банковской карты и/или сообщает Пользователю о невозможности
+                            зарегистрировать такую Банковскую карту.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>При оформлении Заявки на оказание услуг Пользователь должен выбрать зарегистрированную Банковскую
+                            карту, с использованием которой будет осуществляться расчет по соответствующей Заявке на оказание
+                            услуг. При этом Пользователь при оформлении Заявки на оказание услуг вправе предоставить LNY
+                            информацию, указанную в пункте 3.1 Правил расчетов, о незарегистрированной Банковской карте,
+                            с использованием которой будут производиться расчеты по соответствующей Заявке на оказание услуг.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Порядок расчетов</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Оплата стоимости Бытовых услуг, оказанных по Заявке на оказание услуг в соответствии с Договором
+                            на оказание услуг, и выплата LNY вознаграждения по Договору, осуществляется единовременно после
+                            оказания Бытовых услуг посредством списания Банком с Банковской карты, выбранной Пользователем
+                            для осуществления расчетов при оформлении Заявки на оказание услуг, денежных средств в размере,
+                            определенном LNY в соответствии с Договором.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>После списания денежных средств с Банковской карты, выбранной Пользователем для осуществления расчетов
+                            при оформлении Заявки на оказание услуг, LNY направляет на уполномоченный адрес электронной почты
+                            Пользователя информацию об исполненной Мастером Заявке на оказание услуг и списанных Банком денежных
+                            средствах.
+                          </span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Информация об оплаченных Заявках на оказание услуг также доступна Пользователю в Приложении.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY вправе дать поручение Банку зарезервировать на Банковской карте, выбранной Пользователем для
+                            осуществления расчетов при оформлении Заявки на оказание услуг, сумму денежных средств, необходимую
+                            для оплаты услуг Мастера, после принятия Мастером Заявки на оказание услуг к исполнению. Сумма
+                            денежных средств, подлежащая резервированию, определяется LNY по собственному смотрению. При
+                            расчете с Пользователем за оказанные Мастером Бытовые услуги LNY учитывает сумму денежных средств,
+                            зарезервированных на Банковской карте Пользователя. В случае, если соответствующая сумма денежных
+                            средств превышает стоимость оказания Бытовых услуг, LNY возвращает Пользователю разницу между
+                            суммой зарезервированных денежных средств и стоимостью Бытовых услуг путем перевода соответствующей
+                            суммы денежных средств на Банковскую карту Пользователя. </span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Порядок осуществления возвратов LNY</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Полный или частичный возврат LNY денежных средств, уплаченных Пользователем по Заявке на оказание
+                            услуг, возможен в случае:</span>
+                        </p>
+                        <ol>
+                          <li>
+                            <p>
+                              <span>если Пользователь отказался от Заявки на оказание услуг и в соответствии с Договором такой
+                                отказ не требует оплаты стоимости Бытовых услуг; или</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span>если с Банковской карты Пользователя были списаны денежные средства по неисполненной Заявке
+                                на оказание услуг.</span>
+                            </p>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Возврат денежных средств осуществляется только на Банковскую карту, зарегистрированную Пользователем
+                            в Приложении. Пользователь вправе выбрать Банковскую карту, на которую будет производиться возврат
+                            денежных средств.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Осуществление возврата наличными денежными средствами не допускается.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Для возврата денежных средств Пользователь должен направить на уполномоченный адрес LNY заявление,
+                            где должна быть указана сумма для возврата, основание, по которому должен быть произведен возврат,
+                            а также Банковская карта, на которую должен быть осуществлен возврат.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>LNY в срок, не превышающий 5 рабочих дней с момента получения заявления, указанного в пункте 4.4
+                            Правил расчетов, дает поручение Банку на перевод денежных средств на Банковскую карту, указанную
+                            Пользователем в заявлении, либо сообщает о невозможности осуществления возврата.</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Осуществление возврата в соответствие с пунктом 4.1.2 Правил возможно только в случае отсутствия
+                            у LNY информации об исполнении Заявки на оказание услуг, по которой были списаны денежные средства
+                            с Банковской карты Пользователя. В таком случае, возврат осуществляется в полном объеме, включая
+                            вознаграждение LNY по Договору.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Ответственность сторон</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Пользователь гарантирует, что обладает необходимыми правами для регистрации Банковской карты в
+                            порядке, определенном разделом 3 Правил расчетов. В случае предъявлений претензий и/или требований
+                            к LNY в связи с нарушением Пользователем указанной гарантии, Пользователь обязуется возместить
+                            LNY все расходы, понесенные LNY для урегулирования соответствующих претензий и/или требований
+                            (включая любые судебные расходы и упущенную выгоду).</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>Действия, совершенные Пользователем с использованием Приложения, считаются совершенными Пользователем
+                            до того момента, пока Пользователь не сообщит LNY о нарушении режима конфиденциальности и/или
+                            возможном несанкционированном доступе третьего лица к Приложению Пользователя. В таком случае
+                            Пользователь также обязан незамедлительно заблокировать Банковские карты, зарегистрированные
+                            в порядке, определенном разделом 3 Правил расчетов.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <p>
+                      <span>Заключительные положения</span>
+                    </p>
+                    <ol>
+                      <li>
+                        <p>
+                          <span>Во всем остальном, что не урегулировано Правилами расчетов, Стороны руководствуются Договором и
+                            действующим законодательством Российской Федерации.</span>
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" data-id="how-popup">
+      <div class="popup-outer">
+        <div class="popup-inner">
+          <div class="popup-cell">
+            <div class="close show640 show320 js-popup-close">
+              <div class="b b1"></div>
+              <div class="b b2"></div>
+            </div>
+            <div class="ov js-popup-close"></div>
+            <div class="price-popup type-1 popup-content">
+              <div class="close show1000 js-popup-close">
+                <div class="b b1"></div>
+                <div class="b b2"></div>
+              </div>
+              <h3>Как это работает</h3>
+              <div class="text">
+                <p>1. Услуги салона красоты у вас дома или в офисе. Данные услуги осуществляются специалистами мобильного сервиса</p>
+                <p>
+                  <img src="tmp/how-1.jpg" alt="">
+                </p>
+                <p>2. Наши мастера используют только одноразовые или простерилизованные инструменты.</p>
+                <p>
+                  <img src="tmp/how-2.jpg" alt="">
+                </p>
+                <p>3. В нашем салоне и у вас дома мы используем только премиальную косметику и оказываем услуги на высшем уровне.</p>
+                <p>
+                  <img src="tmp/how-3.jpg" alt="">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-popup" id="menu-popup">
+      <div class="popup-outer">
+        <div class="popup-inner">
+          <div class="popup-cell">
+            <div class="wrapper">
+
+              <nav class="menu-nav">
+                <div class="item">
+                  <a class="anchor" href="#saloons">Салоны</a>
+                </div>
+                <div class="item">
+                  <a class="anchor" href="#mobile">Мобильный Сервис</a>
+                </div>
+                <div class="item">
+                  <a class="anchor" href="#price-category">Услуги</a>
+                </div>
+                <div class="item">
+                  <a class="anchor" href="#events">Корпоративное обслуживание</a>
+                </div>
+              </nav>
+
+              <div class="menu-social">
+                <div class="item">
+                  <a href="https://www.facebook.com/legendnewyork">
+                    <span class="i fb"></span>
+                    <span class="l">F</span>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.instagram.com/legend_ny/">
+                    <span class="i ig"></span>
+                    <span class="l">I</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="wrapper">
+        <div class="logo"></div>
+        <div class="nfo show640 show1000">
+          <a href="tel:+74956444474" class="phone">+7(495) 644-44-74</a>
+          <span class="note">единая служба записи</span>
+        </div>
+      </div>
+    </header>
+    <main>
+
+      <section class="home" id="home">
+        <div class="wrapper">
+          <div class="tp">
+            <div class="scroll-ico show1000 js-no-scroll">
+              <div class="b"></div>
+              <!--  <div class="r"></div>
+                            <div class="g1"></div>
+                            <div class="g2"></div> -->
+            </div>
+
+            <p class="tx">Уникальная компания в&nbsp;сфере красоты, специализирующаяся на&nbsp;параллельном и&nbsp;мобильном обслуживании.</p>
+
+            <div class="home-slider">
+              <img class="hd show320" src="/resources/images/hd-mobile.svg" alt="">
+              <img class="hd show640 show1000" src="/resources/images/hd.svg" alt="">
+
+              <div class="outer">
+                <div class="img-wrapper js-home-slider" data-id="home-slider">
+                  <!--только 1-й img такого вида-->
+                  <img class="wait-load-image adaptive-image" data-desktop-src="tmp/home-slider/1.png" src="tmp/home-slider/2.png" alt="">
+                  <img src="tmp/home-slider/2.png" alt="">
+                  <img src="tmp/home-slider/3.png" alt="">
+                  <img src="tmp/home-slider/4.png" alt="">
+                  <img src="tmp/home-slider/5.png" alt="">
+                </div>
+              </div>
+              <div class="progress js-home-progressbar stagger-appear" data-id="home-slider" data-delay="3000">
+                <div class="item">
+                  <div class="i1"></div>
+                  <div class="i2"></div>
+                </div>
+                <div class="item">
+                  <div class="i1"></div>
+                  <div class="i2"></div>
+                </div>
+                <div class="item">
+                  <div class="i1"></div>
+                  <div class="i2"></div>
+                </div>
+                <div class="item">
+                  <div class="i1"></div>
+                  <div class="i2"></div>
+                </div>
+                <div class="item">
+                  <div class="i1"></div>
+                  <div class="i2"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="bt">
+            <div class="l">
+              <div class="btn-wrap">
+                <button class="js-popup-toggle" data-id="saloon-popup">Записаться в салон</button>
+              </div>
+            </div>
+            <div class="r">
+              <div class="btn-wrap">
+                <button class="js-popup-toggle" data-id="call-popup">Вызвать мастера</button>
+                <div class="note">домой или в офис</div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about dark">
+        <div class="bg"></div>
+        <div class="wrapper">
+          <div class="l">
+            <div class="text">
+              <h2>О нас</h2>
+            </div>
+          </div>
+          <div class="r">
+            <div class="text">
+              <h3>Ценим время, чувствуем ваш ритм </h3>
+              <p>Наша компания была основана в&nbsp;2012 году для людей, которым важно хорошо выглядеть, но&nbsp;нет на&nbsp;это
+                времени. Работа в&nbsp;4&nbsp;или 6&nbsp;рук, а&nbsp;также мобильное выездное обслуживание является основой
+                концепции Legend New York.</p>
+              <p>Мы&nbsp;используем только те&nbsp;бренды, которые показали лучшие результаты в&nbsp;работе.</p>
+              <p>Наши мастера обучаются в&nbsp;собственной школе Legend New York Profession School.</p>
+              <p>Компания представлена двумя крупными салонами красоты и&nbsp;Мобильным Сервисом.</p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </section>
+
+      <section class="saloons" id="saloons">
+        <div class="wrapper">
+          <div class="text tp">
+            <h2>Наши Салоны красоты</h2>
+          </div>
+          <div class="text">
+            <div class="l">
+              <p>Приходите в&nbsp;салоны Legend New York &laquo;Москва Сити&raquo; или &laquo;Цветной&raquo; и&nbsp;мы&nbsp;сделаем
+                вам фирменную укладку, стрижку или окрашивание, позаботимся о&nbsp;ваших ногтях и&nbsp;бровях, а&nbsp;также
+                подготовим к&nbsp;любому мероприятию и&nbsp;подарим вам немного времени на&nbsp;себя.</p>
+            </div>
+            <div class="r">
+              <p>Сделайте параллельный педикюр или маникюр вместе с&nbsp;подругами и&nbsp;насладитесь кофе в&nbsp;приятной компании,
+                пока мастера заботятся о&nbsp;вашей красоте.</p>
+              <p>Или попробуйте уход в&nbsp;6&nbsp;рук, чтобы освободить время для более важных дел.</p>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="saloon-switch grey">
+        <div class="bg">
+          <div class="wrapper"></div>
+        </div>
+        <div class="wrapper">
+          <div class="switch">
+            <div class="l sw active js-saloon-switch" data-id="s1">Tsvetnoy</div>
+            <span class="slash">&nbsp;</span>
+            <div class="r sw js-saloon-switch" data-id="s2">Moscow City</div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="saloon">
+        <div class="wrapper">
+          <div class="selected js-saloon active" data-id="s1">
+            <div class="nfo">
+              <div class="l">
+                <div class="tp">
+                  <h3>Legend NY Tsvetnoy</h3>
+                </div>
+                <div class="addr">
+                  <div>Цветной бульвар, д.15, стр 1 Универмаг «Цветной», 4 этаж</div>
+                  <div>Время работы: с 10:00 до 23:00. Единая служба записи:
+                    <span>+7(495) 644-44-74</span>
+                  </div>
+                </div>
+              </div>
+              <div class="r show640 show1000">
+                <button class="js-popup-toggle" data-id="saloon-popup">Записаться в салон</button>
+              </div>
+              <div class="clear"></div>
+            </div>
+
+            <div class="slider js-saloon-slider" data-id="saloon-slider-1">
+              <div class="inner">
+                <div class="slide">
+                  <div class="num">01</div>
+                  <div class="img">
+                    <img src="tmp/salon/LNY-Tsvetnoy1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="num">02</div>
+                  <div class="img">
+                    <img src="tmp/salon/LNY-Tsvetnoy2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="num">03</div>
+                  <div class="img">
+                    <img src="tmp/salon/LNY-Tsvetnoy3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="num">04</div>
+                  <div class="img">
+                    <img src="tmp/salon/LNY-Tsvetnoy4.jpg" alt="">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="num">05</div>
+                  <div class="img">
+                    <img src="tmp/salon/LNY-Tsvetnoy5.jpg" alt="">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="num">06</div>
+                  <div class="img">
+                    <img src="tmp/salon/LNY-Tsvetnoy6.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="slider-controls">
+                <div class="cont next js-slider-arrow" data-sliders="saloon-slider-1" data-slide="next">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="16"
+                    height="20" viewBox="0 0 16 20">
+                    <g>
+                      <path d="M11.511,17.997 L1.998,10.000 L11.511,2.004" />
+                    </g>
+                  </svg>
+                </div>
+                <div class="cont prev js-slider-arrow" data-sliders="saloon-slider-1" data-slide="prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="16"
+                    height="20" viewBox="0 0 16 20">
+                    <g>
+                      <path d="M11.511,17.997 L1.998,10.000 L11.511,2.004" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="show320 m-btn">
+              <button class="js-popup-toggle" data-id="saloon-popup">Записаться в салон</button>
+            </div>
+          </div>
+          <div class="selected js-saloon" data-id="s2">
+            <div class="nfo">
+              <div class="l">
+                <div class="tp">
+                  <h3>Legend NY Moscow City</h3>
+                </div>
+                <div class="addr">
+                  <div>Деловой центр «Москва-Сити», Башня Город Столиц Пресненская набережная, дом 8, 1 этаж</div>
+                  <div>Время работы: с&nbsp;10:00 до&nbsp;23:00. Единая служба записи:
+                    <span>+7(495) 644-44-74</span>
+                  </div>
+                </div>
+              </div>
+              <div class="r show640 show1000">
+                <button class="js-popup-toggle" data-id="saloon-popup">Записаться в салон</button>
+              </div>
+              <div class="clear"></div>
+            </div>
+
+            <div class="slider js-saloon-slider" data-id="saloon-slider-2">
+              <div class="inner">
+                <div class="slide">
+                  <div class="num">01</div>
+                  <div class="img">
+                    <img src="tmp/salon/LNY-Moscow-City.jpg" alt="">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="num">02</div>
+                  <div class="img">
+                    <img src="tmp/salon/LNY-Moscow-City1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="num">03</div>
+                  <div class="img">
+                    <img src="tmp/salon/LNY-Moscow-City2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="num">04</div>
+                  <div class="img">
+                    <img src="tmp/salon/LNY-Moscow-City3.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="slider-controls">
+                <div class="cont next js-slider-arrow" data-sliders="saloon-slider-2" data-slide="next">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="16"
+                    height="20" viewBox="0 0 16 20">
+                    <g>
+                      <path d="M11.511,17.997 L1.998,10.000 L11.511,2.004" />
+                    </g>
+                  </svg>
+                </div>
+                <div class="cont prev js-slider-arrow" data-sliders="saloon-slider-2" data-slide="prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="16"
+                    height="20" viewBox="0 0 16 20">
+                    <g>
+                      <path d="M11.511,17.997 L1.998,10.000 L11.511,2.004" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="show320 m-btn">
+              <button class="js-popup-toggle" data-id="saloon-popup">Записаться в салон</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mobile grey" id="mobile">
+        <div class="bg">
+          <div class="wrapper">
+            <div class="tx show1000">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="1173"
+                height="405" viewBox="0 0 1173 405">
+                <text x="565" y="248" class="cls-1">
+                  <tspan x="565" class="cls-2">Legend NY</tspan>
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="text">
+            <div class="l">
+              <h2>дома и в офисе</h2>
+            </div>
+            <div class="r">
+              <h3>Наш Мобильный Сервис</h3>
+              <p>Помните о&nbsp;красоте, не&nbsp;отвлекаясь от&nbsp;более важных дел&nbsp;&mdash; закажите необходимые процедуры
+                с&nbsp;доставкой на&nbsp;дом или в&nbsp;офис.</p>
+              <p>Это надежно: наши мастера регулярно проходят сертификацию, а&nbsp;инструменты стерилизуются в&nbsp;соответствии
+                с&nbsp;нормами СЭС.</p>
+              <p>Это быстро: Мы&nbsp;можем прислать сразу нескольких специалистов, чтобы сеанс красоты занял меньше времени,
+                и&nbsp;няню, если во&nbsp;время процедур нужно присмотреть за&nbsp;ребенком.</p>
+
+              <div class="link">
+                <a href="#" class="js-popup-toggle" data-id="price-popup">Смотреть мобильный прайс</a>
+              </div>
+
+              <div class="btn-wrap">
+                <button class="js-popup-toggle" data-id="call-popup">Вызвать мастера</button>
+                <div class="note">домой или в офис</div>
+              </div>
+              <div class="btn-wrap">
+                <button class="js-popup-toggle" data-id="how-popup">Как это работает</button>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="service">
+            <img src="/resources/images/phone.png" alt="">
+
+            <div class="tx show320 show640">Mobile</br>Beauty</br>Service</div>
+
+            <div class="app">
+              <a href="https://itunes.apple.com/ru/app/legend-ny/id1057724592" class="as" target="_blank"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.legendny.legendNY" class="gp" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="price-category dark" id="price-category">
+        <div class="bg"></div>
+        <div class="wrapper">
+          <div class="text">
+            <h2>Услуги и прайс</h2>
+            <div class="link">
+              <a href="/resources/files/price.pdf">Скачать прайс в PDF</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+          <div class="category">
+            <div class="item active js-category-sw" data-id="sc1">
+              <div class="num show640 show1000">01</div>
+              <div class="img">
+                <img src="/resources/images/cat-1.jpg" alt="">
+              </div>
+              <div class="tx">
+                <span>Волосы</span>
+              </div>
+            </div>
+            <div class="item js-category-sw" data-id="sc2">
+              <div class="num show640 show1000">02</div>
+              <div class="img">
+                <img src="/resources/images/cat-2.jpg" alt="">
+              </div>
+              <div class="tx">
+                <span>Мейкап и брови</span>
+              </div>
+            </div>
+            <div class="item js-category-sw" data-id="sc3">
+              <div class="num show640 show1000">03</div>
+              <div class="img">
+                <img src="/resources/images/cat-3.jpg" alt="">
+              </div>
+              <div class="tx">
+                <span>Маникюр и педикюр</span>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="wrapper">
+          <div class="cat-selected active js-price-subcategory" data-id="sc1">
+            <div class="tp">
+              <h3>Волосы</h3>
+              <div class="subcategory">
+                <span class="item active">Укладка</span>
+                <span class="item">Окрашивание</span>
+                <span class="item">Уходы</span>
+                <span class="item">Стрижки</span>
+                <span class="item">Детские и мужские услуги</span>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="scroll show320"></div>
+            <!-- Укладка -->
+            <div class="table active">
+              <table>
+                <tbody>
+                  <thead>
+                    <td></td>
+                    <td></td>
+                    <td>стоимость</td>
+                    <td>стилист</td>
+                    <td>топ-cтилист</td>
+                  </thead>
+                  <tr>
+                    <td colspan="5">
+                      <strong>Укладки lux стайлинги oribe (США)</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Фирменная укладка LNY (горячие инструменты / брашинг) (до плеч)</td>
+                    <td>
+                      <span class="tm">40 мин</span>
+                    </td>
+                    <td>2500</td>
+                    <td>3000</td>
+                    <td>3500</td>
+                  </tr>
+
+                  <tr>
+                    <td>Фирменная укладка LNY (горячие инструменты / брашинг) (ниже плеч)</td>
+                    <td>
+                      <span class="tm">60 мин</span>
+                    </td>
+                    <td>2500</td>
+                    <td>3500</td>
+                    <td>4000</td>
+                  </tr>
+                  <tr>
+                    <td>Фирменная укладка LNY (горячие инструменты / брашинг) (ниже середины спины)</td>
+                    <td>
+                      <span class="tm">90 мин</span>
+                    </td>
+                    <td>2500</td>
+                    <td>4000</td>
+                    <td>4500</td>
+                  </tr>
+                  <tr>
+                    <td>Фирменная укладка LNY в рамках окрашивания</td>
+                    <td>
+                      <span class="tm">-</span>
+                    </td>
+                    <td>2000</td>
+                    <td>2000</td>
+                    <td>2000</td>
+                  </tr>
+                  <tr>
+                    <td>Вечерняя / свадебная прическа</td>
+                    <td>
+                      <span class="tm">60-80 мин</span>
+                    </td>
+                    <td>4200</td>
+                    <td>4800</td>
+                    <td>5300</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+            <!-- Окрашивание -->
+            <div class="table">
+              <table>
+                <tbody>
+                  <thead>
+                    <td></td>
+                    <td></td>
+                    <td>стоимость</td>
+                    <td>стилист</td>
+                    <td>топ-cтилист</td>
+                  </thead>
+                  <tr>
+                    <td colspan="5">
+                      <strong>Lux окрашивание kydra (Франция)</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание (корни)</td>
+                    <td>
+                      <span class="tm">60 мин</span>
+                    </td>
+                    <td>6500</td>
+                    <td>7000</td>
+                    <td>8000</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание в один тон (до плеч)</td>
+                    <td>
+                      <span class="tm">100 мин</span>
+                    </td>
+                    <td>7500</td>
+                    <td>8500</td>
+                    <td>9000</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание в один тон (ниже плеч)</td>
+                    <td>
+                      <span class="tm">100 мин</span>
+                    </td>
+                    <td>9000</td>
+                    <td>10000</td>
+                    <td>11000</td>
+                  </tr>
+                  <tr>
+                    <td>Авторское комбинированное окрашивание: шатуш / омбре / мелирование (до плеч)</td>
+                    <td>
+                      <span class="tm">120 мин</span>
+                    </td>
+                    <td>9500</td>
+                    <td>11000</td>
+                    <td>12500</td>
+                  </tr>
+                  <tr>
+                    <td>Авторское комбинированное окрашивание: шатуш / омбре / мелирование (ниже плеч)</td>
+                    <td>
+                      <span class="tm">120 мин</span>
+                    </td>
+                    <td>10000</td>
+                    <td>12000</td>
+                    <td>13500</td>
+                  </tr>
+                  <tr>
+                    <td>Защита в рамках окрашивания Olaplex (США)</td>
+                    <td>
+                      <span class="tm">-</span>
+                    </td>
+                    <td>3000</td>
+                    <td>3000</td>
+                    <td>3000</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+            <!-- Уходы -->
+            <div class="table">
+              <table>
+                <tbody>
+                  <thead>
+                    <td></td>
+                    <td></td>
+                    <td>стоимость</td>
+                    <td>стилист</td>
+                    <td>топ-cтилист</td>
+                  </thead>
+                  <tr>
+                    <td>Экспресс – уход Greymy (Швейцария), без укладки</td>
+                    <td>
+                      <span class="tm">20 мин</span>
+                    </td>
+                    <td>2500</td>
+                    <td>2500</td>
+                    <td>2500</td>
+                  </tr>
+                  <tr>
+                    <td>Кератиновое SPA для волос Greymy (Швейцария) (без укладки)</td>
+                    <td>
+                      <span class="tm">30 мин</span>
+                    </td>
+                    <td>5500</td>
+                    <td>5500</td>
+                    <td>5500</td>
+                  </tr>
+                  <tr>
+                    <td>Уход для волос Olaplex (США) (без укладки)</td>
+                    <td>
+                      <span class="tm">30 мин</span>
+                    </td>
+                    <td>5500</td>
+                    <td>5500</td>
+                    <td>5500</td>
+                  </tr>
+                  <tr>
+                    <td>Японское молекулярное восстановление волос (включая укладку)</td>
+                    <td>
+                      <span class="tm">90 мин</span>
+                    </td>
+                    <td>8500</td>
+                    <td>9000</td>
+                    <td>9500</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+            <!-- Стрижки -->
+            <div class="table">
+              <table>
+                <tbody>
+                  <thead>
+                    <td></td>
+                    <td></td>
+                    <td>стоимость</td>
+                    <td>стилист</td>
+                    <td>топ-cтилист</td>
+                  </thead>
+                  <tr>
+                    <td>Стрижка женская (включая сушку)</td>
+                    <td>
+                      <span class="tm">60 мин</span>
+                    </td>
+                    <td>3500</td>
+                    <td>4300</td>
+                    <td>4600</td>
+                  </tr>
+                  <tr>
+                    <td>Детская стрижка / детское плетение (до 10 лет)</td>
+                    <td>
+                      <span class="tm">30 мин</span>
+                    </td>
+                    <td>1500</td>
+                    <td>1700</td>
+                    <td>2000</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+            <!-- Детские услуги -->
+            <div class="table">
+              <table>
+                <tbody>
+                  <thead>
+                    <td></td>
+                    <td></td>
+                    <td>стоимость</td>
+                    <td>стилист</td>
+                    <td>топ-cтилист</td>
+                  </thead>
+                  <tr>
+                    <td>Детская стрижка / детское плетение (до 10 лет)</td>
+                    <td>
+                      <span class="tm">30 мин</span>
+                    </td>
+                    <td>1500</td>
+                    <td>1700</td>
+                    <td>2000</td>
+                  </tr>
+                  <tr>
+                    <td>Мужская стрижка (только ножницы)</td>
+                    <td>
+                      <span class="tm">45 мин</span>
+                    </td>
+                    <td>2100</td>
+                    <td>2900</td>
+                    <td>3200</td>
+                  </tr>
+                  <tr>
+                    <td>Коррекция и придание формы бороды</td>
+                    <td>
+                      <span class="tm">20 мин</span>
+                    </td>
+                    <td>1500</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="cat-selected js-price-subcategory" data-id="sc2">
+            <div class="tp">
+              <h3>Мейкап и брови</h3>
+              <!--                            <div class="subcategory">
+                                <span class="item">Brow Bar</span>
+                                <span class="item">Макияж</span>
+                            </div> -->
+              <div class="clear"></div>
+            </div>
+            <!-- Brow Bar -->
+            <div class="table active">
+              <table>
+                <tbody>
+                  <thead>
+                    <td></td>
+                    <td></td>
+                    <td>стоимость</td>
+                    <td>стилист</td>
+                    <td>топ-cтилист</td>
+                  </thead>
+                  <tr>
+                    <td>Экспресс макияж: коррекция макияжа, добавление тона, ресницы, блеск для губ</td>
+                    <td>
+                      <span class="tm">20 мин</span>
+                    </td>
+                    <td>2000</td>
+                    <td>2500</td>
+                    <td>3000</td>
+                  </tr>
+                  <tr>
+                    <td>Макияж ДНЕВНОЙ: Becca, MAC, Make up Forever, NYX, Chanel</td>
+                    <td>
+                      <span class="tm">60 мин</span>
+                    </td>
+                    <td>3500</td>
+                    <td>4500</td>
+                    <td>5500</td>
+                  </tr>
+                  <tr>
+                    <td>Макияж ВЕЧЕРНИЙ: смоки, стрелки, хайлайтер. Becca, MAC, Make up Forever, NYX, Chanel</td>
+                    <td>
+                      <span class="tm">90 мин</span>
+                    </td>
+                    <td>4500</td>
+                    <td>5000</td>
+                    <td>6000</td>
+                  </tr>
+                  <tr>
+                    <td>Декорирование ресниц</td>
+                    <td>
+                      <span class="tm">10 мин</span>
+                    </td>
+                    <td>1000</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>Коррекция+окрашивание бровей (хна)</td>
+                    <td>
+                      <span class="tm">60 мин</span>
+                    </td>
+                    <td>1500</td>
+                    <td>3000</td>
+                    <td>3300</td>
+                  </tr>
+                  <tr>
+                    <td>Коррекция бровей</td>
+                    <td>
+                      <span class="tm">20 мин</span>
+                    </td>
+                    <td>1000</td>
+                    <td>1300</td>
+                    <td>1700</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание бровей (краска)</td>
+                    <td>
+                      <span class="tm">20 мин</span>
+                    </td>
+                    <td>1000</td>
+                    <td>1100</td>
+                    <td>1200</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание ресниц</td>
+                    <td>
+                      <span class="tm">20 мин</span>
+                    </td>
+                    <td>1000</td>
+                    <td>1100</td>
+                    <td>1200</td>
+                  </tr>
+                  <tr>
+                    <td>Окрашивание бровей (хна)</td>
+                    <td>
+                      <span class="tm">30 мин</span>
+                    </td>
+                    <td>1500</td>
+                    <td>1950</td>
+                    <td>2200</td>
+                  </tr>
+                  <tr>
+                    <td>Коррекция+окрашивание бровей (краска)</td>
+                    <td>
+                      <span class="tm">50 мин</span>
+                    </td>
+                    <td>1500</td>
+                    <td>1900</td>
+                    <td>2100</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+            <!-- Макияж -->
+            <!--                        <div class="table">
+                            <table>
+                                <tbody>
+                                    <thead>
+                                        <td></td>
+                                        <td></td>
+                                        <td>стоимость</td>
+                                        <td>стилист</td>
+                                        <td>топ-cтилист</td>
+                                    </thead>
+                                    <tr>
+                                        <td>Экспресс макияж: коррекция макия- жа, добавление тона, ресницы, блеск для губ</td>
+                                        <td>
+                                            <span class="tm">20 мин</span>
+                                        </td>
+                                        <td>2000</td>
+                                        <td>2500</td>
+                                        <td>3000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Макияж ДНЕВНОЙ: Becca, MAC, Make up Forever, NYX, Chanel</td>
+                                        <td>
+                                            <span class="tm">60 мин</span>
+                                        </td>
+                                        <td>3500</td>
+                                        <td>4500</td>
+                                        <td>5500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Макияж ВЕЧЕРНИЙ: смоки, стрел- ки, хайлайтер. Becca, MAC, Make up Forever, NYX, Chanel</td>
+                                        <td>
+                                            <span class="tm">90 мин</span>
+                                        </td>
+                                        <td>4500</td>
+                                        <td>5000</td>
+                                        <td>6000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Декорирование ресниц</td>
+                                        <td>
+                                            <span class="tm">10 мин</span>
+                                        </td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div> -->
+          </div>
+          <div class="cat-selected js-price-subcategory" data-id="sc3">
+            <div class="tp">
+              <h3>Маникюр и педикюр</h3>
+              <div class="subcategory">
+                <span class="item active">Маникюр</span>
+                <span class="item">Педикюр</span>
+                <span class="item">Мужской зал</span>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <!-- Маникюр -->
+            <div class="table active">
+              <table>
+                <tbody>
+                  <thead>
+                    <td></td>
+                    <td></td>
+                    <td>стоимость</td>
+                    <td>стилист</td>
+                    <td>топ-cтилист</td>
+                  </thead>
+                  <tr>
+                    <td colspan="5">
+                      <strong>Маникюр с лаком christina fitzgerald (Австралия)</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Обрезной / аппаратный маникюр / маникюр пилками Christina Fitzgerald с покрытием лаком или без покрытия</td>
+                    <td>
+                      <span class="tm">60 мин</span>
+                    </td>
+                    <td>2100</td>
+                    <td>2500</td>
+                    <td>3000</td>
+                  </tr>
+                  <tr>
+                    <td>Детский маникюр с покрытием, лак Christina Fitzgerald</td>
+                    <td>
+                      <span class="tm">40 мин</span>
+                    </td>
+                    <td>1500</td>
+                    <td>1700</td>
+                    <td>1800</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      <strong>Маникюр с гель-лаком Luxio (Канада)</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр с покрытием Luxio (в один тон)</td>
+                    <td>
+                      <span class="tm">80 мин</span>
+                    </td>
+                    <td>3200</td>
+                    <td>3800</td>
+                    <td>4200</td>
+                  </tr>
+                  <tr>
+                    <td>Маникюр с покрытием Luxio +френч / лунки</td>
+                    <td>
+                      <span class="tm">90 мин</span>
+                    </td>
+                    <td>3500</td>
+                    <td>4000</td>
+                    <td>4500</td>
+                  </tr>
+                  <tr>
+                    <td>Защита перед гель-лаком (Голландия)</td>
+                    <td>
+                      <span class="tm">20 мин</span>
+                    </td>
+                    <td>1000</td>
+                    <td>1200</td>
+                    <td>1300</td>
+                  </tr>
+                  <tr>
+                    <td>Снятие покрытия гель-лак в рамках маникюра</td>
+                    <td>
+                      <span class="tm">20 мин</span>
+                    </td>
+                    <td>400</td>
+                    <td>500</td>
+                    <td>600</td>
+                  </tr>
+                  <tr>
+                    <td>Ремонт 1 ногтя</td>
+                    <td>
+                      <span class="tm">15 мин</span>
+                    </td>
+                    <td>300</td>
+                    <td>400</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>4-х фазное восстановление ногтей после гель-лаков (Голландия)</td>
+                    <td>
+                      <span class="tm">90 мин</span>
+                    </td>
+                    <td>2900</td>
+                    <td>3100</td>
+                    <td>3300</td>
+                  </tr>
+                  <tr>
+                    <td>Арт-покрытие / аэрография (1 ноготь)</td>
+                    <td>
+                      <span class="tm">15 мин</span>
+                    </td>
+                    <td>450</td>
+                    <td>450</td>
+                    <td>450</td>
+                  </tr>
+                  <tr>
+                    <td>Сложный дизайн (стразы, роспись кистью) (1 ноготь)</td>
+                    <td>
+                      <span class="tm">15 мин</span>
+                    </td>
+                    <td>550</td>
+                    <td>550</td>
+                    <td>550</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+            <!-- Педикюр -->
+            <div class="table">
+              <table>
+                <tbody>
+                  <thead>
+                    <td></td>
+                    <td></td>
+                    <td>стоимость</td>
+                    <td>стилист</td>
+                    <td>топ-cтилист</td>
+                  </thead>
+                  <tr>
+                    <td colspan="5">
+                      <strong>Педикюр с лаком christina fitzgerald (Австралия)</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Аппаратный / комбинированный педикюр с покрытием лаком Christina Fitzgerald или без покрытия</td>
+                    <td>
+                      <span class="tm">80/120 мин</span>
+                    </td>
+                    <td>3200</td>
+                    <td>3900</td>
+                    <td>4300</td>
+                  </tr>
+                  <tr>
+                    <td>Медицинский педикюр женский / мужской</td>
+                    <td>
+                      <span class="tm">120 мин</span>
+                    </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>4800</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      <strong>Педикюр с гель-лаком Luxio (Канада)</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Аппаратный / комбинированный педикюр с покрытием Luxio (в один тон)</td>
+                    <td>
+                      <span class="tm">80 мин</span>
+                    </td>
+                    <td>4250</td>
+                    <td>4900</td>
+                    <td>5300</td>
+                  </tr>
+                  <tr>
+                    <td>Аппаратный / комбинированный педикюр с покрытием Luxio + френч</td>
+                    <td>
+                      <span class="tm">90 мин</span>
+                    </td>
+                    <td>4550</td>
+                    <td>5250</td>
+                    <td>5650</td>
+                  </tr>
+                  <tr>
+                    <td>Снятие покрытия гель-лак в рамках педикюра</td>
+                    <td>
+                      <span class="tm">15 мин</span>
+                    </td>
+                    <td>400</td>
+                    <td>500</td>
+                    <td>600</td>
+                  </tr>
+                  <tr>
+                    <td>Арт-покрытие / аэрография (1 ноготь)</td>
+                    <td>
+                      <span class="tm">15 мин</span>
+                    </td>
+                    <td>450</td>
+                    <td>450</td>
+                    <td>450</td>
+                  </tr>
+                  <tr>
+                    <td>Сложный дизайн (стразы, роспись кистью) (1 ноготь)</td>
+                    <td>
+                      <span class="tm">15 мин</span>
+                    </td>
+                    <td>550</td>
+                    <td>550</td>
+                    <td>550</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+            <!-- мужской зал -->
+            <div class="table">
+              <table>
+                <tbody>
+                  <thead>
+                    <td></td>
+                    <td></td>
+                    <td>стоимость</td>
+                    <td>стилист</td>
+                    <td>топ-cтилист</td>
+                  </thead>
+                  <tr>
+                    <td>Мужской маникюр (классический или Аташе)</td>
+                    <td>
+                      <span class="tm">60 мин</span>
+                    </td>
+                    <td>2000</td>
+                    <td>2500</td>
+                    <td>3000</td>
+                  </tr>
+                  <tr>
+                    <td>Мужской педикюр</td>
+                    <td>
+                      <span class="tm">90 мин</span>
+                    </td>
+                    <td>3200</td>
+                    <td>3900</td>
+                    <td>4300</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events dark" id="events">
+        <div class="bg">
+          <div class="wrapper"></div>
+        </div>
+        <div class="wrapper">
+          <div class="text">
+            <div class="l">
+              <h2>Свадьбы и праздники</h2>
+            </div>
+            <div class="r">
+              <h3>безупречное впечатление</h3>
+              <p>Наша программа разработана специально для компаний, которые занимаются организацией свадеб, корпоративов, Дней
+                Рождений и&nbsp;других мероприятий, а&nbsp;также для пятизвездочных отелей и&nbsp;ресторанов, предоставляющих
+                свою территорию для проведения праздников.</p>
+              <p>Мы&nbsp;помогаем вам создать безупречное впечатление от&nbsp;праздника за&nbsp;счет трех уровней подготовки
+                персонала, гостей, невесты, подружек и&nbsp;т.д., высокого качества и&nbsp;скорости оказания услуг&nbsp;&mdash;
+                за&nbsp;3&nbsp;часа готовим до&nbsp;40&nbsp;человек.</p>
+              <div class="link">
+                <a href="http://lny.com.ru/corp/LNY_lookbook.pdf" target="_blank">Смотреть LOOK BOOK</a>
+              </div>
+              <div class="btn-wrap">
+                <button class="js-popup-toggle" data-id="corp-popup">корпоративный заказ</button>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="inst">
+        <div class="wrapper">
+          <div class="tp">
+            <div class="l">
+              <h2>присоединяйтесь</h2>
+            </div>
+            <div class="r">
+              <div class="social">
+                <div class="item">
+                  <a href="https://www.facebook.com/legendnewyork">facebook</a>
+                </div>
+                <div class="item">
+                  <a href="https://www.instagram.com/legend_ny/">instagram</a>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="bt">
+            <div class="carousel js-carousel" data-id="carousel">
+              <div class="inner">
+                <div class="item">
+                  <div class="img" style="background-image: url(/photos/1379063523896117111_375881253.jpg)"></div>
+                </div>
+                <div class="item">
+                  <div class="img" style="background-image: url(/photos/1378884534564837243_375881253.jpg)"></div>
+                </div>
+                <div class="item">
+                  <div class="img" style="background-image: url(/photos/1378342333061743935_375881253.jpg)"></div>
+                </div>
+                <div class="item">
+                  <div class="img" style="background-image: url(/photos/1378157562444548201_375881253.jpg)"></div>
+                </div>
+                <div class="item">
+                  <div class="img" style="background-image: url(/photos/1377614266722930172_375881253.jpg)"></div>
+                </div>
+                <div class="item">
+                  <div class="img" style="background-image: url(/photos/1377432792325249034_375881253.jpg)"></div>
+                </div>
+                <div class="item">
+                  <div class="img" style="background-image: url(/photos/1376889489808915932_375881253.jpg)"></div>
+                </div>
+                <div class="item">
+                  <div class="img" style="background-image: url(/photos/1376709284162977443_375881253.jpg)"></div>
+                </div>
+                <div class="item">
+                  <div class="img" style="background-image: url(/photos/1375983361868639160_375881253.jpg)"></div>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </div>
+            <div class="slider-controls show1000">
+              <div class="cont next js-slider-arrow" data-sliders="carousel" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="16"
+                  height="20" viewBox="0 0 16 20">
+                  <g>
+                    <path d="M11.511,17.997 L1.998,10.000 L11.511,2.004" />
+                  </g>
+                </svg>
+              </div>
+              <div class="cont prev js-slider-arrow" data-sliders="carousel" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="16"
+                  height="20" viewBox="0 0 16 20">
+                  <g>
+                    <path d="M11.511,17.997 L1.998,10.000 L11.511,2.004" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="dark">
+        <div class="bg"></div>
+        <div class="tp">
+          <div class="wrapper">
+            <div class="logo"></div>
+            <nav class="f-nav">
+              <div class="item">
+                <a class="anchor" href="#saloons">Салоны</a>
+              </div>
+              <div class="item">
+                <a class="anchor" href="#mobile">Мобильный Сервис</a>
+              </div>
+              <div class="item">
+                <a class="anchor" href="#price-category">Услуги</a>
+              </div>
+              <div class="item">
+                <a class="anchor" href="#events">Корпоративное обслуживание</a>
+              </div>
+            </nav>
+            <div class="leg">
+              <a href="#" class="js-popup-toggle" data-id="person-popup">Условия пользования и&nbsp;обработки персональных данных</a>
+            </div>
+            <div class="phone">
+              <a href="tel:+74956444474">+7(495) 644-44-74</a>
+            </div>
+          </div>
+        </div>
+        <div class="bt">
+          <div class="wrapper">
+            <div class="cp">&copy;&nbsp;2016 Legend NY. Все права защищены.</div>
+            <div class="dev">
+              <span>Сделано в </span>
+              <a href="http://redcollar.ru/">Red Collar</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+</body>
+
+</html>
